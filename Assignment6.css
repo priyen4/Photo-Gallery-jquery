@@ -1,0 +1,229 @@
+
+
+body {
+    font-family: Lucida Sans, Lucida Sans Regular, Lucida Grande, Lucida Sans Unicode, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    min-height: 600px;
+    background-image: url('images/color.png');
+    margin-right: auto;
+    margin-left: auto;
+    width: 980px;
+}
+
+.allPage {
+    width: 900px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+h1, h2 {
+    font-size: 50px;
+    font-weight: normal;
+    color: #ff0000;
+    text-shadow: rgb(240, 240, 240) 1px 1px 0px;
+}
+
+.contents {
+    width: 900px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.contents ul {
+    padding: 0;
+    list-style: none;
+}
+
+.contents li {
+    float: left;
+}
+
+.contents li img {
+    width: 300px;
+    height: 200px;
+    display: block;
+    opacity: 0.8;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.contents ul:hover img {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.contents ul:hover img:hover {
+    opacity: 1;
+}
+
+#display {
+    z-index: 10;
+    position: fixed;
+    display: none;
+    overflow: hidden;
+}
+
+#displayImg {
+    border: 5px solid #FFFFFF;
+    width: 500px;
+}
+
+#display span {
+    padding: 10px;
+    position: absolute;
+    font-size: 20px;
+    color: #333333;
+    z-index: 11;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border-radius: 50%;
+    opacity: 0;
+    -moz-transition: .3s;
+    -webkit-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+#display span:hover {
+    box-shadow: 0px 0px 5px 2px #333333;
+}
+
+#display:hover span {
+    opacity: 1;
+}
+
+#display #cross {
+    top: 0px;
+    right: 10px;
+}
+
+#display #previous {
+    top: 150px;
+    left: -20px;
+}
+
+#display #next {
+    top: 150px;
+    right: -20px;
+}
+
+#display #pause, #play {
+    bottom: 20px;
+    left: 250px;
+}
+
+#pause {
+    display: none;
+}
+
+#display #img-name {
+    bottom: 30px;
+    left: -200px;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 0 5px 5px 0;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+
+#display:hover #cross {
+    top: 10px;
+}
+
+#display:hover #previous {
+    left: 10px;
+}
+
+#display:hover #next {
+    right: 10px;
+}
+
+#display:hover #img-name {
+    left: 5px;
+}
+
+.footer {
+    clear: both;
+    padding-top: 60px;
+    font-size: 12px;
+    color: #ff0000;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Icomoon Icons */
+@font-face {
+    font-family: 'icomoon';
+    src: url('fonts/icomoon.eot');
+    src: url('fonts/icomoon.eot?#iefix') format('embedded-opentype'), url('fonts/icomoon.woff') format('woff'), url('fonts/icomoon.ttf') format('truetype'), url('fonts/icomoon.svg#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+    font-family: 'icomoon';
+    content: attr(data-icon);
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+.icon-home, .icnPlay, .icnPause, .icnPrevious, .icnNext, .icon-arrow-left, .icnClose {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon-home:before {
+    content: "\e000";
+}
+
+.icnPlay:before {
+    content: "\e002";
+}
+
+.icnPause:before {
+    content: "\e003";
+}
+
+.icnPrevious:before {
+    content: "\e004";
+}
+
+.icnNext:before {
+    content: "\e005";
+}
+
+.icon-arrow-left:before {
+    content: "\e006";
+}
+
+.icnClose:before {
+    content: "\e001";
+}
